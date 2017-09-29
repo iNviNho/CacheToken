@@ -1,4 +1,9 @@
 {
     "name": "invinho/cachetoken",
-    "type": "library"
+    "type": "library",
+	"autoload": {
+		"psr-4": {
+			"iNviNho\\CacheToken\\": "src/"
+		}
+	}
 }
