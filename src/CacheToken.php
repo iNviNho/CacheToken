@@ -1,6 +1,6 @@
 <?php
 
-namespace CacheToken;
+namespace iNviNho;
 
 use Nette\Caching\Cache,
     Nette\Utils\DateTime,
