@@ -23,10 +23,10 @@ class CacheToken {
         $this->cache = new Cache($storage, $name);        
     }
     
-    public function getTimeStamp() {
+    public function getTimeStamp($isDebug = FALSE) {
         
        $timestamp = $this->cache->load($this->name);
-        if (is_null($timestamp)) {
+        if (is_null($timestamp) || $isDebug) {
             $datetime = new DateTime;
             $timestamp = $this->cache->save($this->name, $datetime->getTimestamp());
         }    
