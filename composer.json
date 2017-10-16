@@ -1,6 +1,7 @@
 {
     "name": "invinho/cachetoken",
     "type": "library",
+	"description": "Automatic refresh of css/js files after upload",
 	"autoload": {
 		"psr-4": {
 			"iNviNho\\CacheToken\\": "src/"
