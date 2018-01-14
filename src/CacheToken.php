@@ -20,7 +20,8 @@ class CacheToken {
     private $name;
     
     public function __construct(IStorage $storage, $name) {
-        $this->cache = new Cache($storage, $name);        
+        $this->cache = new Cache($storage, $name);
+        $this->name = $name;
     }
     
     public function getTimeStamp($isDebug = FALSE) {
